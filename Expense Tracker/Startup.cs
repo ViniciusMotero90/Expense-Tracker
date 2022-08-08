@@ -25,7 +25,7 @@ namespace Expense_Tracker
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllersWithViews();
-            services.AddDbContext<ApplicationDbContext>(options => options.UseMySql("server=localhost;initial catalog=Expense Tracker;uid=root;pwd=Vinicius23", ServerVersion.Parse("8.0.29-mysql")));
+            services.AddDbContext<ApplicationDbContext>(options => options.UseMySql("server=localhost;initial catalog=Expense Tracker;uid=seuusuario;pwd=suasenha", ServerVersion.Parse("8.0.29-mysql")));
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
